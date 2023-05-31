@@ -4,29 +4,23 @@
 template <typename  T>
 class Lista
 {
-    public:
-        Lista();
-        virtual ~Lista();
-        void AgregarInicio(const T & elem);
-        void AgregarFinal(const T & elem);
-        bool AgregarArbitrario(const T & elem, const int & pos)const;
-        int CantidadElementos()const;
-        bool PerteneceLista(const T & elem) const;
-        void EliminarLista (const T & elem);
-        int DevolverElemento(const int &pos)const;
+private:
+    struct Nodo{
+        T elem;
+        Nodo*siguiente;
+    };
+    Nodo * primero;
 
-
-    protected:
-
-    private:
-        struct Nodo{
-            T elem;
-            Nodo*siguiente
-        }
-        Nodo * primero;
-        // Auxliares
-        bool haySiguiente(T elem);
-        T siguiente(T elem);
+public:
+    Lista();
+    ~Lista();
+    void AgregarInicio(const T & elem);
+    void AgregarFinal(const T & elem);
+    bool AgregarArbitrario(const T & elem, const int & pos)const;
+    int CantidadElementos()const;
+    bool PerteneceLista(const T & elem) const;
+    bool EliminarLista (const T & elem);
+    T DevolverElemento(const int &pos)const;
 };
 
 #endif // LISTA_H

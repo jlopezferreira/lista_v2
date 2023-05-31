@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1685539952 source:c:\users\win10\documents\ingsistemas disco\algoritmos i\aydatp\main.cpp
+	<iostream>
+	"Lista.h"
+
+1685539913 source:c:\users\win10\documents\ingsistemas disco\algoritmos i\aydatp\src\lista.cpp
+	"Lista.h"
+	<cassert>
+	<iostream>
+
+1685539896 c:\users\win10\documents\ingsistemas disco\algoritmos i\aydatp\include\lista.h
+
